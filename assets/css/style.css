@@ -1,0 +1,26 @@
+body {
+    font-family: 'Anton', sans-serif;
+    background: black;
+}
+
+.characters-gohere {
+    float: left;
+    padding: 5px;
+}
+
+button {
+    display: inline-block;
+    justify-content: baseline;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    background: black;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+p, label {
+    color: white;
+}
