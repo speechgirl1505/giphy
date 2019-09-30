@@ -18,17 +18,18 @@ $(document).ready(function () {
 
     }
 
-    // $("add-staff").on("click", function(){
-    //     var newStaff = $("input");
+    $("#add-staff").on("click", function(){
+       event.preventDefault();
+        var newStaff = $("#addingStaff").val();
 
-    //     favOfficeCharacters.push(newStaff)
+        favOfficeCharacters.push(newStaff);
 
-    //     gifButtons(favOfficeCharacters, "#character-buttons", ".office-person");
+        gifButtons(favOfficeCharacters, "#character-buttons", ".office-person");
     
-    // })
+    })
 
             $(document).on("click", ".office-person", function () {
-                //emptying out the div we harcoded in our html
+                //emptying out the div we hardcoded in our html
                 $("#characters").empty();
 
                 var character = $(this).attr("data-person");
@@ -70,9 +71,9 @@ $(document).ready(function () {
             //making the gifs start and stop when clicked
             $(document).on("click", ".character-img", function () {
 
-                var state = $(this).attr("data-state");
+                var whatItBe = $(this).attr("data-state");
 
-                if (state === "still") {
+                if (whatItBe === "still") {
                     $(this).attr("src", $(this).attr("data-animate"));
                     $(this).attr("data-state", "animate");
                 }
@@ -81,7 +82,6 @@ $(document).ready(function () {
                     $(this).attr("data-state", "still");
                 }
             });
-
 
     gifButtons();
 
