@@ -21,6 +21,28 @@ button {
     border-radius: 10px;
 }
 
+.icon{
+    position:absolute;
+    left:18px;
+    top:9px;
+    font-size:30px;
+    color: white
+  }
+
+form, input {
+    margin: 1.5em;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+}
+
 p, label {
     color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid white;;
+}
+
+.character-img {
+    border-radius: 10px;
+    border: .5px solid whitesmoke;;
 }
